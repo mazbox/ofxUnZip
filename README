@@ -1,0 +1,10 @@
+Unzip files with openframeworks.
+
+Instructions
+------------
+add all ofxUnZip files to your project
+call ofxUnZip(zipFilePath, destination);
+
+simples.
+
+Marek
