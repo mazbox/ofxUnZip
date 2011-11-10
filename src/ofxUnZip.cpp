@@ -30,7 +30,8 @@
 int do_extract(unzFile uf,string destination, int opt_overwrite);
 
 bool ofxUnZip(string zipFile, string destination) {
-	
+	zipFile = ofToDataPath(zipFile);
+	destination = ofToDataPath(destination);
 	unzFile uf = unzOpen(zipFile.c_str());
 	
 	if (uf==NULL)
